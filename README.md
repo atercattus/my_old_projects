@@ -1,4 +1,4 @@
-my_old_projects
+Мои старые desktop программы времен универа
 ===============
 
-My old desktop projects (2004-2007)
+Написаны на masm32, C++, Delphi и даже на VisualBasic.
