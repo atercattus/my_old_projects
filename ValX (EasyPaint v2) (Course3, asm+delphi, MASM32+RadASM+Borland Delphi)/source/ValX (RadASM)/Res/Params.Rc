@@ -1,0 +1,27 @@
+#define IDC_STC1 2001
+#define IDC_STC2 2002
+
+#define IDC_EDT1 2003
+#define IDC_EDT2 2004
+
+#define IDC_CHK1 2005
+
+#define IDC_BTN1 2006
+#define IDC_BTN2 2007
+
+ParamsDlg DIALOGEX 10, 10, 140, 85
+STYLE DS_CENTER | WS_CAPTION | WS_VISIBLE | DS_MODALFRAME | DS_3DLOOK | WS_SYSMENU
+CAPTION "Параметры нового изображения"
+FONT 10,"Times New Roman",400,0
+BEGIN
+  LTEXT "Ширина:", IDC_STC1, 10, 10, 40, 10
+  LTEXT "Высоты:", IDC_STC2, 10, 25, 40, 10
+  
+  EDITTEXT IDC_EDT1, 60, 10, 30, 10
+  EDITTEXT IDC_EDT2, 60, 25, 30, 10
+  
+  AUTOCHECKBOX "Сохранить старое изображение", IDC_CHK1, 10, 40, 120, 20
+
+  DEFPUSHBUTTON "Применить", IDC_BTN1, 10, 63, 50, 15
+  PUSHBUTTON "Отмена", IDC_BTN2, 80, 63, 50, 15
+END

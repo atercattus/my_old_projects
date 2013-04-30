@@ -1,0 +1,124 @@
+#define IDM_FILE				10000
+	#define IDM_NEW				10001
+	#define IDM_OPEN			10002
+	#define IDM_SAVE			10003
+;	#define IDM_SAVEAS			10004
+	#define IDM_EXIT			10005
+
+#define	IDM_VIEW				10100
+	#define	IDM_WND_INSTRUMS	10101
+	#define	IDM_WND_STATUSBAR	10102
+	#define	IDM_WND_PARAMS		10103
+	#define	IDM_WND_PAL			10104
+	#define	IDM_NET				10105
+	#define	IDM_WND_THUMBNAIL	10106
+	
+#define	IDM_IMAGE				10200
+	#define	IDM_CLEAR			10201
+	#define	IDM_INVERT			10202
+	#define	IDM_MATRIX			10203
+	#define	IDM_PROCESS			10204
+		#define	IDM_COLORFILT	10205
+		#define	IDM_THUMBNAIL	10206
+		#define	IDM_BROWSER		10205
+
+#define IDM_INSTRUMENTS			10301
+	#define IDM_PEN				10302
+	#define IDM_LINE			10303
+	#define IDM_RECT			10304
+	#define IDM_ELLIPCE			10305
+	#define IDM_ERASE			10306
+	#define IDM_FILL			10307
+	#define IDM_GETTER			10308
+
+#define IDM_PARAMS				10401
+	#define IDM_SELFG			10402
+	#define IDM_SELBG			10403
+
+#define IDM_HELP				10501
+	#define IDM_ABOUT			10502
+
+MAINMENU MENU
+{
+ POPUP "Файл"
+ {
+  MENUITEM "Новый\tCtrl+N", IDM_NEW
+  MENUITEM "Открыть\tCtrl+O", IDM_OPEN
+  MENUITEM "Сохранить\tCtrl+S", IDM_SAVE
+  MENUITEM SEPARATOR
+  MENUITEM "Выход\tEsc", IDM_EXIT
+ }
+
+ POPUP "Инструменты"
+ {
+  MENUITEM "Карандаш\t1", IDM_PEN, CHECKED
+  MENUITEM "Линия\t2", IDM_LINE
+  MENUITEM "Прямоугольник\t3", IDM_RECT
+  MENUITEM "Эллипс\t4", IDM_ELLIPCE
+  MENUITEM "Ластик\t5", IDM_ERASE
+  MENUITEM "Заливка\t6", IDM_FILL
+  MENUITEM "Пипетка\t7", IDM_GETTER
+ }
+ 
+ POPUP "Изображение"
+ {
+  MENUITEM "Очистить", IDM_CLEAR
+  MENUITEM "_Инвертировать", IDM_INVERT
+  MENUITEM "_Матричные операции", IDM_MATRIX
+  POPUP "_Обработка"
+  {
+    MENUITEM "_Цветофильтры", IDM_COLORFILT
+    MENUITEM "_Палитра", IDM_THUMBNAIL
+    MENUITEM SEPARATOR
+    MENUITEM "_Браузер эффектов", IDM_BROWSER
+  }
+ }
+
+ POPUP "Настройки"
+ {
+  MENUITEM "Цвет карандаша\tP", IDM_SELFG
+  MENUITEM "Цвет кисти\tB", IDM_SELBG
+ }
+
+ POPUP "Вид"
+ {
+  MENUITEM "Инструменты", IDM_WND_INSTRUMS, CHECKED
+  MENUITEM "Строка состояния", IDM_WND_STATUSBAR, CHECKED
+  MENUITEM "_Параметры", IDM_WND_PARAMS
+  MENUITEM "_Палитра", IDM_WND_PAL
+  MENUITEM SEPARATOR
+  MENUITEM "_Сетка", IDM_NET
+  MENUITEM "Окно эскиза\tCtrl+T", IDM_WND_THUMBNAIL, CHECKED
+ }
+ 
+ POPUP "?"
+ {
+  MENUITEM "О программе\tCtrl+A", IDM_ABOUT
+ }
+}
+
+ACCEL ACCELERATORS
+{
+	VK_ESCAPE, IDM_EXIT, VIRTKEY
+
+	"N", IDM_NEW, VIRTKEY, CONTROL
+	"O", IDM_OPEN, VIRTKEY, CONTROL
+	"S", IDM_SAVE, VIRTKEY, CONTROL
+	
+	"T", IDM_WND_THUMBNAIL, VIRTKEY, CONTROL
+	
+	"P", IDM_SELFG, VIRTKEY
+	"P", IDM_SELFG, VIRTKEY, SHIFT
+	"B", IDM_SELBG, VIRTKEY
+	"B", IDM_SELFG, VIRTKEY, SHIFT
+	
+	"1", IDM_PEN, VIRTKEY
+	"2", IDM_LINE, VIRTKEY
+	"3", IDM_RECT, VIRTKEY
+	"4", IDM_ELLIPCE, VIRTKEY
+	"5", IDM_ERASE, VIRTKEY
+	"6", IDM_FILL, VIRTKEY
+	"7", IDM_GETTER, VIRTKEY
+	
+	"A", IDM_ABOUT, VIRTKEY, CONTROL
+}

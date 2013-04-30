@@ -1,0 +1,73 @@
+#define IDM_FILE        10001
+	#define IDM_NEW     10002
+	#define IDM_OPEN    10003
+	#define IDM_SAVE    10004
+;	#define IDM_SAVEAS  10005
+	#define IDM_EXIT    10006
+	
+#define IDM_INSTRUMENTS 10101
+	#define IDM_PEN     10102
+	#define IDM_LINE    10103
+	#define IDM_RECT    10104
+	#define IDM_ELLIPCE 10105
+	#define IDM_ERASE   10106
+	#define IDM_FILL    10107
+	#define IDM_GETTER  10108
+	#define IDM_CLEAR   10109
+
+#define IDM_PARAMS		10201
+	#define IDM_SELFG	10202
+	#define IDM_SELBG	10203
+
+#define IDM_HELP        10301
+	#define IDM_ABOUT   10302
+	
+
+MAINMENU MENU 
+{
+ POPUP "Файл"
+ {
+  MENUITEM "Новый\tCtrl+N", IDM_NEW
+  MENUITEM "Открыть\tCtrl+O", IDM_OPEN
+  MENUITEM "Сохранить\tCtrl+S", IDM_SAVE
+  MENUITEM SEPARATOR
+  MENUITEM "Выход\tEsc", IDM_EXIT
+ }
+ 
+ POPUP "Инструменты"
+ {
+  MENUITEM "Карандаш", IDM_PEN, CHECKED
+  MENUITEM "Линия", IDM_LINE
+  MENUITEM "Прямоугольник", IDM_RECT
+  MENUITEM "Эллипс", IDM_ELLIPCE
+  MENUITEM "Ластик", IDM_ERASE
+  MENUITEM "Заливка", IDM_FILL
+  MENUITEM "Пипетка", IDM_GETTER
+  MENUITEM SEPARATOR
+  MENUITEM "Очистка", IDM_CLEAR
+ }
+
+ POPUP "Настройки"
+ {
+  MENUITEM "Цвет карандаша\tCtrl+P", IDM_SELFG
+  MENUITEM "Цвет кисти\tCtrl+B", IDM_SELBG
+ }
+ 
+ POPUP "?"
+ {
+  MENUITEM "О программе\tCtrl+A", IDM_ABOUT
+ }
+}
+
+ACCEL ACCELERATORS
+{
+	VK_ESCAPE, IDM_EXIT, VIRTKEY
+
+	"n", IDM_NEW, VIRTKEY, CONTROL
+	"o", IDM_OPEN, VIRTKEY, CONTROL
+	
+	"p", IDM_SELFG, VIRTKEY, CONTROL
+	"b", IDM_SELBG, VIRTKEY, CONTROL
+	
+	"a", IDM_ABOUT, VIRTKEY, CONTROL		
+}

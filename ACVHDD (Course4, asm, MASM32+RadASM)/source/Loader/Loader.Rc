@@ -1,0 +1,4 @@
+#include "Res/LoaderRes.rc"
+#include "Res/DialogForms.rc"
+#include "Res/XPMan.rc"
+#include "Res/LoaderVer.rc"

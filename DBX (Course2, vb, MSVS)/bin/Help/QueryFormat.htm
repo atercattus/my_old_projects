@@ -1,0 +1,409 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="ru">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<title>Формат запросов</title>
+<meta name="keywords" content>
+</head>
+
+<script language="JavaScript">
+       <!-- 
+           if(top.frames.length==0) top.location.href='index.html?Форматзапросов.htm'
+       //-->
+  </script>
+<body bgcolor="#FFFFFF">
+
+<table width="100%" border="0" cellspacing="0" cellpadding="2" bgcolor="#00A5A5">
+	<tr>
+		<td align="left">
+		<table width="100%" border="0" cellpadding="0" cellspacing="0">
+			<tr valign="top">
+				<td width="40"></td>
+				<td>
+				<span style="font-family:Helvetica,Arial; font-size:12pt; color:#FFFFD9">
+				<b>Формат запросов</b></span><b>&nbsp; <br>
+				</b></span></td>
+			</tr>
+		</table>
+		<table width="100%" border="0" cellpadding="0" cellspacing="0">
+			<tr valign="top">
+				<td width="40"></td>
+				<td></span></span></td>
+			</tr>
+		</table>
+		</td>
+		<td align="right"><font face="Arial" size="2">
+		<a href="javaScript:parent.reDisplay('4.3',1,0)">Назад</a>&nbsp;
+		<a href="javaScript:parent.reDisplay('1',1,0)">Вверх</a>&nbsp; </font>
+		</td>
+	</tr>
+</table>
+<br>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+	<tr valign="top">
+		<td width="40"></td>
+		<td>
+		<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">&nbsp;<br>
+		</span></td>
+	</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+	<tr valign="top">
+		<td width="40"></td>
+		<td></td>
+	</tr>
+</table>
+<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+	<tr valign="top">
+		<td width="40"></td>
+		<td>
+		<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">
+		Каждый запрос выглядит, как вызов функции. В круглых скобках через запятую 
+		перечисляются параметры. Некоторые параметры могут не использоваться (параметр 
+		по-умолчанию).&nbsp; <br>
+		</span></span></span></td>
+	</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+	<tr valign="top">
+		<td width="40"></td>
+		<td>
+		<span style="font-family:Helvetica,Arial; font-size:10pt; color:#FF0000">&nbsp;<br>
+		</span></span></td>
+	</tr>
+</table>
+<div align="center">
+&nbsp;&nbsp;
+<table border="0" cellpadding="0" style="border-collapse: collapse">
+	<tr><td>
+		<p align="left">
+		<span style="font-family:Helvetica,Arial; font-size:10pt; color:#FF0000">
+		ВНИМАНИЕ</span></td></tr>
+	<tr><td>
+		<p align="left">
+		<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">
+		Регистр букв имеет значение, т.е. запрос AddCol(...) будет выполнен, а запрос 
+		aDDCOL<span lang="en-us">(...)</span> нет.</span></td>		
+	</tr>
+</table>
+</div>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+	<tr valign="top">
+		<td width="40"></td>
+		<td></td>
+	</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+	<tr valign="top">
+		<td width="38"></td>
+		<td>
+		<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">&nbsp;<br>
+		</span></span></span></td>
+	</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+	<tr valign="top">
+		<td width="38"></td>
+		<td>
+		<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">
+		Первая колонка содержит названия запросов. В строке с названием в 3 колонке 
+		записана общая форма запроса, где цифрами обозначены номера параметров, 
+		перечисленных ниже, во втором столбце. Напротив параметров 2 столбца в 3 
+		столбце расположены описания соответствующих параметров. Если параметр записан 
+		в виде [x] - он не является обязательным (в запросе Вывода если не указать 
+		параметр 4, то вывод будет осуществлен в новую таблицу; в запросе Изменение 
+		параметр 2 используется если изменяется заголовок поля: вызов ChgName а 
+		не ChgType).&nbsp; <br>
+		</span></td>
+	</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+	<tr valign="top">
+		<td width="38"></td>
+		<td></td>
+	</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+	<tr valign="top">
+		<td width="54"></td>
+		<td>
+		<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">&nbsp;<br>
+		</span></span></span></td>
+	</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+	<tr valign="top">
+		<td>
+		<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">
+		<div align="center">
+			<table border="1" cellpadding="0" cellspacing="0" style="border-collapse: collapse" width="85%">
+				<tr>
+					<th width="170" height="100" bgcolor="#00A5A5" rowspan="5">
+					<font size="2" color="#FFFF00">Добавление поля</font></th>
+					<td align="center" width="896" height="0" bgcolor="#FFFFD9" colspan="2">
+					<span style="font-family:Helvetica,Arial; font-size:10pt; ">
+					AddCol(1, 2, 3, 4)</span></td>
+				</tr>
+				<tr>
+					<td align="center" width="109" height="0">
+					<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">
+					заголовок</span></td>
+					<td align="left" width="787" height="0">
+					<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">
+					Текст заголовка нового поля. Недопустимы одноименные поля.</span></td>
+				</tr>
+				<tr>
+					<td align="center" width="109" height="0">
+					<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">
+					тип</span></td>
+					<td align="left" width="787" height="0">
+					<font size="2">Тип поля: <span lang="en-us"><i><b>i</b></i> 
+					- </span>числовое, <span lang="en-us"><i><b>s</b></i> -
+					</span>строковое.</font></td>
+				</tr>
+				<tr>
+					<td align="center" width="109" height="0">
+					<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">
+					нач. значение</span></td>
+					<td align="left" width="787" height="0">
+					<font size="2">Значение полей новых записей (ВНИМАНИЕ: 
+					учитывайте типы полей).</font></td>
+				</tr>
+				<tr>
+					<td align="center" width="109" height="0">
+					<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">
+					позиция</span></td>
+					<td align="left" width="787" height="0">
+					<font size="2">Номер колонки для вставки (от 0). Если нужно 
+					вставить в конец укажите <b><i><span lang="en-us">-1</span></i></b>.</font></td>
+				</tr>
+				<tr>
+					<th width="170" height="20" bgcolor="#00A5A5">
+					<span style="font-family:Helvetica,Arial; color:#FFFF00">
+					<font size="2">Добавление записи</font></span></th>
+					<td align="center" width="896" height="0" bgcolor="#FFFFD9" colspan="2">
+					<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">
+					<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">
+					AddRow( )</span></span></td>
+				</tr>
+				<tr>
+					<th width="170" height="60" bgcolor="#00A5A5" rowspan="3">
+					<span style="font-family:Helvetica,Arial; color:#FFFF00">
+					<font size="2">Удаление поля</font></span></th>
+					<td align="center" width="896" height="0" bgcolor="#FFFFD9" colspan="2">
+		<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">
+					<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">
+					DelCol(1, 2)</span></span></td>
+				</tr>
+				<tr>
+					<td align="center" width="109" height="0">
+					<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">
+					позиция поля</span></td>
+					<td align="left" width="787" height="0">
+					<font size="2">Номер удаляемого поля.</font></td>
+				</tr>
+				<tr>
+					<td align="center" width="109" height="0">
+					<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">
+					подтверждение</span></td>
+					<td align="left" width="787" height="0">
+					<font size="2">Нужен ли диалог подтверждения: <i><b>
+					<span lang="en-us">yes</span></b></i>, <i><b>
+					<span lang="en-us">no</span></b></i>.</font></td>
+				</tr>
+				<tr>
+					<th width="170" height="60" bgcolor="#00A5A5" rowspan="3">
+					<span style="font-family:Helvetica,Arial; color:#FFFF00">
+					<font size="2">Удаление записи</font></span></th>
+					<td align="center" width="896" height="0" bgcolor="#FFFFD9" colspan="2">
+		<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">
+					<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">
+					DelRow(1, 2)</span></span></td>
+				</tr>
+				<tr>
+					<td align="center" width="109" height="0">
+					<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">
+					позиция</span></td>
+					<td align="left" width="787" height="0">
+					<font size="2">Номер удаляемой записи.</font></td>
+				</tr>
+				<tr>
+					<td align="center" width="109" height="0">
+					<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">
+					подтверждение</span></td>
+					<td align="left" width="787" height="0">
+					<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">
+					<font size="2">Нужен ли диалог подтверждения: <i><b>
+					<span lang="en-us">yes</span></b></i>, <i><b>
+					<span lang="en-us">no</span></b></i>.</font></span></td>
+				</tr>
+				<tr>
+					<th width="170" height="60" bgcolor="#00A5A5" rowspan="3">
+					<span style="font-family:Helvetica,Arial; color:#FFFF00">
+					<font size="2">Сортировка</font></span></th>
+					<td align="center" width="896" height="0" bgcolor="#FFFFD9" colspan="2">
+		<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">
+					<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">
+					Srt(1, 2)</span></span></td>
+				</tr>
+				<tr>
+					<td align="center" width="109" height="0">
+					<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">
+					номер поля</span></td>
+					<td align="left" width="787" height="0">
+					<font size="2">Номер поля, по которому осуществляется 
+					сортировка.</font></td>
+				</tr>
+				<tr>
+					<td align="center" width="109" height="0">
+					<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">
+					вид (AZ - ZA)</span></td>
+					<td align="left" width="787" height="0">
+					<font size="2">Тип сортировки: <span lang="en-us"><i><b>AZ</b></i> 
+					- </span>по алфавиту, <span lang="en-us"><i><b>ZA</b></i> -
+					</span>против алфавита.</font></td>
+				</tr>
+				<tr>
+					<th width="170" height="100" bgcolor="#00A5A5" rowspan="5">
+					<span style="font-family:Helvetica,Arial; color:#FFFF00">
+					<font size="2">Вывод</font></span></th>
+					<td align="center" width="896" height="0" bgcolor="#FFFFD9" colspan="2">
+		<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">
+					<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">
+					Out( 1, 23[ , 4] )</span></span></td>
+				</tr>
+				<tr>
+					<td align="center" width="109" height="0">
+					<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">
+					номер поля</span></td>
+					<td align="left" width="787" height="0">
+					<font size="2">Номер поля, в котором будут производится 
+					сравнения.</font></td>
+				</tr>
+				<tr>
+					<td align="center" width="109" height="0">
+					<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">
+					условие</span></td>
+					<td align="left" width="787" height="0">
+					<font size="2">Условие сравнения<sup>1</sup>.</font></td>
+				</tr>
+				<tr>
+					<td align="center" width="109" height="0">
+					<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">
+					относит. значение</span></td>
+					<td align="left" width="787" height="0">
+					<font size="2">Значение, с которым будет производится 
+					сравнение</font><span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000"><font size="2"> 
+					(ВНИМАНИЕ: учитывайте типы полей)</font></span><font size="2">.</font></td>
+				</tr>
+				<tr>
+					<td align="center" width="109" height="0">
+					<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">
+					[номер таблицы]</span></td>
+					<td align="left" width="787" height="0">
+					<font size="2">Если параметр указан, то вывод будет 
+					производится в указанную таблицу. Иначе будет создана новая 
+					таблица.</font></td>
+				</tr>
+				<tr>
+					<th width="170" height="60" bgcolor="#00A5A5" rowspan="3">
+					<span style="font-family:Helvetica,Arial; color:#FFFF00">
+					<font size="2">Обмен</font></span></th>
+					<td align="center" width="896" height="0" bgcolor="#FFFFD9" colspan="2">
+		<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">
+					<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">
+					Swp[Col | Row]( 1, 2 )</span></span></td>
+				</tr>
+				<tr>
+					<td align="center" width="109" height="0">
+					<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">
+					номер 1</span></td>
+					<td align="left" width="787" rowspan="2">
+		<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">
+					Позиции обмениваемых полей или записей.</span></td>
+				</tr>
+				<tr>
+					<td align="center" width="109" height="0">
+					<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">
+					номер 2</span></td>
+				</tr>
+				<tr>
+					<th width="170" height="60" bgcolor="#00A5A5" rowspan="3">
+					<span style="font-family:Helvetica,Arial; color:#FFFF00">
+					<font size="2">Изменение</font></span></th>
+					<td align="center" width="896" height="0" bgcolor="#FFFFD9" colspan="2">
+		<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">
+					<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">
+					Chg[Type | Name]( 1[ , 2] )</span></span></td>
+				</tr>
+				<tr>
+					<td align="center" width="109" height="0">
+					<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">
+					номер поля</span></td>
+					<td align="left" width="787" height="0">
+					<font size="2">Номер изменяемого поля. При изменении типа 
+					поля поля меняет тип на противоположный (Число
+					<span lang="en-us">&lt;-&gt;</span> Строка). Если переход к 
+					числовому типу, то все нечисловые данные поля будут заменены
+					<i><b>0</b></i>.</font></td>
+				</tr>
+				<tr>
+					<td align="center" width="109" height="0">
+					<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">
+					[заголовок поля]</span></td>
+					<td align="left" width="787" height="0">
+					<font size="2">Если выбрано изменение заголовка, то этот 
+					параметр содержит новое значение.</font></td>
+				</tr>
+			</table>
+		</div>
+		</span></td>
+	</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+	<tr valign="top">
+		<td width="54"></td>
+		<td>
+		<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">&nbsp;</span><p>
+		<font size="2"><sup>1</sup> - Возможные условия сравнения:<ul>
+			<li>Вывод записей с совпадающим полем&nbsp;&nbsp;<b><i>?=</i></b></li>
+			<li>Вывод записей с полем большим заданного&nbsp;&nbsp;<b><i>?></i></b></li>
+			<li>Вывод записей с полем меньшим заданного&nbsp;&nbsp;<b><i>?<</i></b></li>
+			<li>Вывод записей с количеством повторов поля равным некоторому количеству&nbsp;&nbsp;<b><i>+=</i></b></li>
+			<li>Вывод записей с количеством повторов поля большим некоторого количества&nbsp;&nbsp;<b><i>+></i></b></li>
+			<li>Вывод записей с количеством повторов поля меньшим некоторого количества&nbsp;&nbsp;<b><i>+<</i></b></li>
+		</ul>
+		</td>
+	</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+	<tr valign="top">
+		<td width="54"></td>
+		<td></td>
+	</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+	<tr valign="top">
+		<td width="38"></td>
+		<td>
+		<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">
+		Для того, чтобы хорошо разобраться в запросах лучше всего создавать запросы 
+		в Мастере запросов, а затем используя этот раздел справки анализировать 
+		результаты. Также хорошо бы править запросы вручную и смотреть на получившийся 
+		результат.&nbsp; <br>
+		</span></span></span></td>
+	</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+	<tr valign="top">
+		<td width="38"></td>
+		<td></span></span></td>
+	</tr>
+</table>
+</span>
+
+</body>
+
+</html>

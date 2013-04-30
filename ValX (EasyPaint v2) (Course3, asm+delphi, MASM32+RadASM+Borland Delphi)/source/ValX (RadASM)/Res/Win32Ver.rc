@@ -1,0 +1,25 @@
+#define VERINF 1
+VERINF VERSIONINFO
+FILEVERSION 0,0,1,0
+PRODUCTVERSION 0,0,1,0
+FILEOS 0x00000004
+FILETYPE 0x00000001
+BEGIN
+  BLOCK "StringFileInfo"
+  BEGIN
+    BLOCK "041904E3"
+    BEGIN
+      VALUE "CompanyName", "DW\0"
+      VALUE "FileVersion", "0.0.1\0"
+      VALUE "FileDescription", "Курсовой проект по курсу 'Системное программирование'\0"
+      VALUE "InternalName", "ValX\0"
+      VALUE "LegalCopyright", "Xerx\0"
+      VALUE "ProductName", "ValX\0"
+      VALUE "ProductVersion", "0.0.1\0"
+    END
+  END
+  BLOCK "VarFileInfo"
+  BEGIN
+    VALUE "Translation", 0x0419, 0x04E3
+  END
+END

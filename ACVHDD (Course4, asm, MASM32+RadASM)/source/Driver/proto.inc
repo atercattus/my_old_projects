@@ -1,0 +1,9 @@
+AC_DriverEntry					proto	:PDRIVER_OBJECT,:PUNICODE_STRING
+AC_DriverUnload					proto	:PDRIVER_OBJECT
+AC_OpenFileDrive				proto	:PDEVICE_OBJECT,:PIRP
+AC_CloseFileDrive				proto	:PDEVICE_OBJECT,:PIRP
+AC_DispatchReadWrite			proto	:PDEVICE_OBJECT,:PIRP
+AC_DispatchCreate				proto	:PDEVICE_OBJECT,:PIRP
+AC_DispatchClose				proto	:PDEVICE_OBJECT,:PIRP
+AC_DispatchControl				proto	:PDEVICE_OBJECT,:PIRP
+MmGetSystemAddressForMdlSafe	proto	:PMDL,:DWORD

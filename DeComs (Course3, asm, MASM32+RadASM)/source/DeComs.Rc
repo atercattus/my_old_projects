@@ -1,0 +1,44 @@
+#include "Res\\menu.rc"
+
+#define	DS_CENTER			0x00000800
+#define	WS_CAPTION			0x00C00000
+#define	WS_VISIBLE			0x10000000
+#define	DS_MODALFRAME		0x00000080
+#define	DS_3DLOOK			0x00000004
+#define	WS_SYSMENU			0x00080000
+#define DS_SETFONT			0x00000040
+#define SS_LEFT				0x00000000
+#define SS_CENTER           0x00000001
+#define WS_GROUP			0x00020000
+#define WS_BORDER			0x00800000
+#define WS_TABSTOP			0x00010000
+#define BS_DEFPUSHBUTTON	0x00000001
+#define BS_PUSHBUTTON		0x00000000
+#define ES_AUTOHSCROLL		0x00000080
+#define LBS_HASSTRINGS		0x00000040
+#define LBS_USETABSTOPS		0x00000080
+#define WS_VSCROLL			0x00200000
+#define WS_HSCROLL			0x00100000
+
+
+    #define TVS_HASBUTTONS          0x0001
+    #define TVS_HASLINES            0x0002
+    #define TVS_LINESATROOT         0x0004
+    #define TVS_EDITLABELS          0x0008
+    #define TVS_DISABLEDRAGDROP     0x0010
+    #define TVS_SHOWSELALWAYS       0x0020
+    #define TVS_RTLREADING          0x0040
+    #define TVS_NOTOOLTIPS          0x0080
+    #define TVS_CHECKBOXES          0x0100
+    #define TVS_TRACKSELECT         0x0200
+    #define TVS_SINGLEEXPAND        0x0400
+    #define TVS_INFOTIP             0x0800
+    #define TVS_FULLROWSELECT       0x1000
+    #define TVS_NOSCROLL            0x2000
+    #define TVS_NONEVENHEIGHT       0x4000
+
+
+;#define	TRUE				1
+
+#include "Res\\Results.rc"
+#include "Res\\FileList.rc"
